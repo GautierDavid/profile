@@ -1,0 +1,141 @@
+/******************   Variables color/size   ***************************/
+:root {
+  --black-clr: black;
+  --white-clr: white;
+  --main-bg-color: #F7F9FC;
+  --main-font-clr: #575F7D;
+  --button-bg-color: #6B72E1;
+  --XXL-font: 3rem;
+  --XL-font: 2rem;
+  --L-font: 1.6rem;
+  --M-font: 1.3rem;
+  --S-font: 1rem;
+}
+
+
+/******************   Font size/family   ***************************/
+body {
+  font-size: 62.5%;
+
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+
+  background-color: var(--main-bg-color);
+  color: var(--main-font-clr);
+}
+
+
+/******************   Generics Classes   ***************************/
+.text-center {
+  text-align: center;
+}
+
+.auto-margin {
+  margin-inline: auto;
+}
+
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--white-clr);
+  margin-bottom: 2rem;
+  padding: .8rem 1.2rem;
+  border-radius: 5px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+
+/******************   Components   ***************************/
+.container {
+  width: 53%;
+  margin-block: 3rem;
+}
+
+.card {
+  background-color: var(--white-clr);
+
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+}
+
+
+/******************   Typographies   ***************************/
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-font-clr);
+  font-size: var(--XL-font);
+  font-weight: 900;
+}
+
+h2 {
+  color: #7ECE90;
+  font-size: var(--L-font);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--M-font);
+  padding-bottom: .8rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline-block;
+  padding-inline: .8rem;
+}
+
+a {
+  text-decoration: none;
+
+  color: gray;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--S-font);
+  font-weight: 600;
+
+  text-transform: capitalize;
+}
+
+img {
+  border: black solid 1px;
+}
+
+i {
+  font-size: var(--XXL-font);
+  color: rgb(230, 230, 230);
+}
+
+/******************   Pseudo-classes Effects   ***************************/
+a:hover, i:hover {
+  color: var(--black-clr);
+}
+
+.button:hover {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+}
+
+
+/******************   QUERIES   ***************************/
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
